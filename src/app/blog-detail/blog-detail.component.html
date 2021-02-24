@@ -1,0 +1,17 @@
+<div style="margin-left: 80px; color: black; width: 85%">
+  <a routerLink="/blogList"
+    ><span
+      style="float: right; margin-top: 20px"
+      class="glyphicon glyphicon-home"
+    ></span></a
+  ><br />
+  <br /><br />
+  <span style="font-size: 30px">{{ blogTitle }}</span>
+  <br />
+  <span style="color: darkslategrey"
+    >Posted By {{ blogCreatedBy }} On {{ blogCreatedOn }}<br /><br
+  /></span>
+  <div *ngFor="let blog of blogDetails">
+    <div>{{ blog }}</div><br>
+  </div>
+</div>
